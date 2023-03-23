@@ -31,6 +31,11 @@
                     <input type="text" id="engInput" onkeyup="search()" placeholder="Search for Title.." title="Type in a title">
                     <input type="text" id="chiInput" onkeyup="search()" placeholder="搜索路徑.." title="Type in a title">
                 </div>
+            <!--district-->
+                <div id="district">
+                    <input type="button" onclick="location()" value="East" class="btn">
+                     
+                </div>
             <!--title-->
                 <p id="toptitle">Fitness Walking Tracks</p>
            
@@ -64,6 +69,20 @@
                         <th>前往途徑</th>
                         <th>緯度</th>
                         <th>經度</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="engVerwithdistrict">
+            <table id = "tb3" border = "1">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>District</th>
+                        <th>Route</th>
+                        <th>HowToAccess</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
                     </tr>
                 </thead>
             </table>
@@ -124,6 +143,33 @@
                                 <tbody>`;
                     }
                 })
+                fetch("mydata.json")
+                .then(response => response.json())
+                .then(data => {
+                    for (var i = 0; i<data.items.length; i++){
+                        if (District_en ==  "Central and Western"){
+                         
+                            let vTitle_en = data.items[i].Title_en;
+                            let vDistrict_en = data.items[i].District_en;
+                            let vRoute_en = data.items[i].Route_en;
+                            let vHowToAccess_en = data.items[i].HowToAccess_en;
+                            let vMapURL_en = data.items[i].MapURL_en;
+                            let vLatitude = data.items[i].Latitude;
+                            let vLongitude = data.items[i].Longitude;
+                                document.querySelector("#tb3").innerHTML += `
+                                    <tbody>
+                                        <tr>
+                                            <td>${vTitle_en}</td>
+                                            <td>${vDistrict_en}</td>
+                                            <td>${vRoute_en}</td>
+                                            <td>${vHowToAccess_en}</td>
+                                            <td>${vLatitude}</td>
+                                            <td>${vLongitude}</td>
+                                        </tr>
+                                    <tbody>`;
+                         }
+                     }
+                   })
         </script>
     </body>
 
