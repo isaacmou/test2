@@ -152,7 +152,29 @@
     }
     #chiVer td:nth-of-type(6):before { 
         content: "經度";
+	    
     }
+    #engVerwithdistrict td:nth-of-type(1):before { 
+        content: "Title";
+    }
+    #engVerwithdistrict td:nth-of-type(2):before { 
+        content: "District";
+    }
+    #engVerwithdistrict td:nth-of-type(3):before { 
+        content: "Route";
+    }
+    #engVerwithdistrict td:nth-of-type(4):before { 
+        content: "HowToAcces";
+    }
+    #engVerwithdistrict td:nth-of-type(5):before { 
+        content: "Latitude";
+    }
+    #engVerwithdistrict td:nth-of-type(6):before { 
+        content: "Longitude";
+    }
+
+
+
 
 
 
