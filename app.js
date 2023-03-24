@@ -1,5 +1,5 @@
 function showEnglish() {
-    document.getElementById("engVer").style.display = "";
+    document.getElementById("engVer").style.display = "none";
     document.getElementById("chiVer").style.display = "none";
     document.getElementById("engVerwithdistrict").style.display = "none";
     document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
@@ -18,33 +18,11 @@ function showChinese() {
 }
 
 function Area1() {
-    let varName = document.getElementById("btn1").value;
+    varName = "Central and Western";
     document.getElementById("engVer").style.display = "none";
     document.getElementById("chiVer").style.display = "none";
     document.getElementById("engVerwithdistrict").style.display = "";
     document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
     document.getElementById("engInput").style.display = "";
     document.getElementById("chiInput").style.display = "none";
-
-}
-function Area2() {
-    let varName = document.getElementById("btn2").value;
-    document.getElementById("engVer").style.display = "none";
-    document.getElementById("chiVer").style.display = "none";
-    document.getElementById("engVerwithdistrict").style.display = "";
-    document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
-    document.getElementById("engInput").style.display = "";
-    document.getElementById("chiInput").style.display = "none";
-
-}
-function Area3() {
-    let varName = document.getElementById("btn3").value;
-    document.getElementById("engVer").style.display = "none";
-    document.getElementById("chiVer").style.display = "none";
-    document.getElementById("engVerwithdistrict").style.display = "";
-    document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
-    document.getElementById("engInput").style.display = "";
-    document.getElementById("chiInput").style.display = "none";
-
-}
 
