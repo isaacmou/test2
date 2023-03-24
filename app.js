@@ -17,7 +17,7 @@ function showChinese() {
     document.getElementById("chiInput").style.display = "none";
 }
 
-function location() {
+function Area() {
     document.getElementById("engVer").style.display = "none";
     document.getElementById("chiVer").style.display = "none";
     document.getElementById("engVerwithdistrict").style.display = "";
