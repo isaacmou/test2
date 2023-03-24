@@ -94,6 +94,7 @@
         <script>
 
             document.getElementById("chiInput").style.display = "none";
+            let varName = document.getElementById("btn1").value;
 
             fetch("mydata.json")
                 .then(response => response.json())
@@ -147,7 +148,6 @@
                 fetch("mydata.json")
                 .then(response => response.json())
                 .then(data => {
-                    let varName = document.getElementById("btn1").value;
                     for (var i = 0; i<data.items.length; i++){    
                         if(data.items[i].District_en == varName){
                             let vTitle_enwithdistrict = data.items[i].Title_en;
