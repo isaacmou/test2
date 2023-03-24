@@ -144,12 +144,10 @@
                                 <tbody>`;
                     }
                 })
-              fetch("mydata.json")
+                fetch("mydata.json")
                 .then(response => response.json())
                 .then(data => {
-                    for (var i = 0; i<data.items.length; i++){
-                    
-                         
+                    for (var i = 0; i<data.items.length; i++){    
                         let vTitle_enwithdistrict = data.items[i].Title_en;
                         let vDistrict_enwithdistrict = data.items[i].District_en;
                         let vRoute_enwithdistrict = data.items[i].Route_en;
@@ -168,7 +166,6 @@
                                         <td>${vLongitudewithdistrict}</td>
                                     </tr>
                                 <tbody>`;
-                         
                       }
                      
                   })
