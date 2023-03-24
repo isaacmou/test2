@@ -1,5 +1,5 @@
 function showEnglish() {
-    document.getElementById("engVer").style.display = "";
+    document.getElementById("engVer").style.display = "none";
     document.getElementById("chiVer").style.display = "none";
     document.getElementById("engVerwithdistrict").style.display = "none";
     document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
