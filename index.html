@@ -144,33 +144,33 @@
                                 <tbody>`;
                     }
                 })
-                fetch("mydata.json")
+              fetch("mydata.json")
                 .then(response => response.json())
                 .then(data => {
                     for (var i = 0; i<data.items.length; i++){
-                        if (District_en ==  "Central and Western"){
+                    
                          
-                            let vTitle_enwithdistrict = data.items[i].Title_en;
-                            let vDistrict_enwithdistrict = data.items[i].District_en;
-                            let vRoute_enwithdistrict = data.items[i].Route_en;
-                            let vHowToAccess_enwithdistrict = data.items[i].HowToAccess_en;
-                            let vMapURL_enwithdistrict = data.items[i].MapURL_en;
-                            let vLatitudewithdistrict = data.items[i].Latitude;
-                            let vLongitudewithdistrict = data.items[i].Longitude;
-                                document.querySelector("#tb3").innerHTML += `
-                                    <tbody>
-                                        <tr>
-                                            <td>${vTitle_enwithdistrict}</td>
-                                            <td>${vDistrict_enwithdistrict}</td>
-                                            <td>${vRoute_enwithdistrict}</td>
-                                            <td>${vHowToAccess_enwithdistrict}</td>
-                                            <td>${vLatitudewithdistrict}</td>
-                                            <td>${vLongitudewithdistrict}</td>
-                                        </tr>
-                                    <tbody>`;
+                        let vTitle_enwithdistrict = data.items[i].Title_en;
+                        let vDistrict_enwithdistrict = data.items[i].District_en;
+                        let vRoute_enwithdistrict = data.items[i].Route_en;
+                        let vHowToAccess_enwithdistrict = data.items[i].HowToAccess_en;
+                        let vMapURL_enwithdistrict = data.items[i].MapURL_en;
+                        let vLatitudewithdistrict = data.items[i].Latitude;
+                        let vLongitudewithdistrict = data.items[i].Longitude;
+                            document.querySelector("#tb3").innerHTML += `
+                                <tbody>
+                                    <tr>
+                                        <td>${vTitle_enwithdistrict}</td>
+                                        <td>${vDistrict_enwithdistrict}</td>
+                                        <td>${vRoute_enwithdistrict}</td>
+                                        <td>${vHowToAccess_enwithdistrict}</td>
+                                        <td>${vLatitudewithdistrict}</td>
+                                        <td>${vLongitudewithdistrict}</td>
+                                    </tr>
+                                <tbody>`;
                          
                       }
-                     }
+                     
                   })
         </script>
     </body>
