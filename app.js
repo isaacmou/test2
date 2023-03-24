@@ -25,4 +25,4 @@ function Area1() {
     document.getElementById("toptitle").innerHTML = "Fitness Walking Tracks";
     document.getElementById("engInput").style.display = "";
     document.getElementById("chiInput").style.display = "none";
-
+}
