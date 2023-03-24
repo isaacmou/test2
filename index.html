@@ -33,9 +33,9 @@
                 </div>
             <!--district-->
                 <div id="DistrictArea">
-                    <input type="button" id="btn1" onclick="Area()" value="Central and Western" class="btn">
-                    <input type="button" id="btn2" onclick="Area()" value="Wan Chai" class="btn">
-                    <input type="button" id="btn3" onclick="Area()" value="Eastern" class="btn">
+                    <input type="button" id="btn1" onclick="Area1()" value="Central and Western" class="btn">
+                    <input type="button" id="btn2" onclick="Area2()" value="Wan Chai" class="btn">
+                    <input type="button" id="btn3" onclick="Area3()" value="Eastern" class="btn">
                 </div> 
                 
             <!--title-->
@@ -95,9 +95,6 @@
         <script>
 
             document.getElementById("chiInput").style.display = "none";
-            $("button").click(function() {
-                var varName = $(this).val();
-            });
             fetch("mydata.json")
                 .then(response => response.json())
                 .then(data => {
