@@ -149,22 +149,22 @@
                     for (var i = 0; i<data.items.length; i++){
                         if (District_en ==  "Central and Western"){
                          
-                            let vTitle_en = data.items[i].Title_en;
-                            let vDistrict_en = data.items[i].District_en;
-                            let vRoute_en = data.items[i].Route_en;
-                            let vHowToAccess_en = data.items[i].HowToAccess_en;
-                            let vMapURL_en = data.items[i].MapURL_en;
-                            let vLatitude = data.items[i].Latitude;
-                            let vLongitude = data.items[i].Longitude;
+                            let vTitle_enwithdistrict = data.items[i].Title_en;
+                            let vDistrict_enwithdistrict = data.items[i].District_en;
+                            let vRoute_enwithdistrict = data.items[i].Route_en;
+                            let vHowToAccess_enwithdistrict = data.items[i].HowToAccess_en;
+                            let vMapURL_enwithdistrict = data.items[i].MapURL_en;
+                            let vLatitudewithdistrict = data.items[i].Latitude;
+                            let vLongitudewithdistrict = data.items[i].Longitude;
                                 document.querySelector("#tb3").innerHTML += `
                                     <tbody>
                                         <tr>
-                                            <td>${vTitle_en}</td>
-                                            <td>${vDistrict_en}</td>
-                                            <td>${vRoute_en}</td>
-                                            <td>${vHowToAccess_en}</td>
-                                            <td>${vLatitude}</td>
-                                            <td>${vLongitude}</td>
+                                            <td>${vTitle_enwithdistrict}</td>
+                                            <td>${vDistrict_enwithdistrict}</td>
+                                            <td>${vRoute_enwithdistrict}</td>
+                                            <td>${vHowToAccess_enwithdistrict}</td>
+                                            <td>${vLatitudewithdistrict}</td>
+                                            <td>${vLongitudewithdistrict}</td>
                                         </tr>
                                     <tbody>`;
                          
